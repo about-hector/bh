@@ -4,9 +4,8 @@ import { useCubeTexture, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { uuid } from "@/lib/utils/uuid";
 
-// Import shaders as raw strings
-import vertexShader from "../shaders/vertex.glsl";
-import fragmentShader from "../shaders/fragment.glsl";
+import vertexShader from "@/shaders/vertex.glsl";
+import fragmentShader from "@/shaders/fragment.glsl";
 
 const Blackhole: React.FC = () => {
   const meshRef = useRef<THREE.Mesh>(null);
